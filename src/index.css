@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --color-gold: #C99A45;
+    --color-sand: #E6C99A;
+    --color-temple: #17130F;
+    --color-charcoal: #211C16;
+    --color-ivory: #F6ECDD;
+    --color-bronze: #79542D;
+    --color-muted-gold: #A98243;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: #17130F;
+    color: #F6ECDD;
+  }
+
+  h1, h2, h3, .font-cinzel {
+    font-family: 'Cinzel', Georgia, serif;
+  }
+}
+
+/* Custom scrollbar for game studio feel */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #17130F;
+}
+::-webkit-scrollbar-thumb {
+  background: #2E271F;
+  border-radius: 4px;
+  border: 1px solid #79542D/40;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C99A45;
+}

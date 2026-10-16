@@ -1,0 +1,251 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" width="100%" height="100%">
+  <defs>
+    <!-- Rounded App Corner Clip -->
+    <clipPath id="appIconClip">
+      <rect x="0" y="0" width="800" height="800" rx="140" ry="140" />
+    </clipPath>
+
+    <!-- Sunset Sky Gradient -->
+    <linearGradient id="citySky" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#221038" />
+      <stop offset="20%" stop-color="#491A4B" />
+      <stop offset="42%" stop-color="#9E2E52" />
+      <stop offset="65%" stop-color="#E2542B" />
+      <stop offset="82%" stop-color="#F79F2E" />
+      <stop offset="100%" stop-color="#FEDF72" />
+    </linearGradient>
+
+    <!-- Sun Glow & Halo -->
+    <radialGradient id="sunsetSun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="30%" stop-color="#FFF5B8" />
+      <stop offset="65%" stop-color="#FFAE34" />
+      <stop offset="90%" stop-color="#FF522B" />
+      <stop offset="100%" stop-color="#FF522B" stop-opacity="0" />
+    </radialGradient>
+
+    <!-- Fiery Title Gradient -->
+    <linearGradient id="fireYellow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFBE" />
+      <stop offset="25%" stop-color="#FED836" />
+      <stop offset="60%" stop-color="#FF8412" />
+      <stop offset="90%" stop-color="#D92204" />
+      <stop offset="100%" stop-color="#8E0F00" />
+    </linearGradient>
+
+    <!-- Red Banner Gradient -->
+    <linearGradient id="battleRed" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#8A0606" />
+      <stop offset="45%" stop-color="#E51414" />
+      <stop offset="100%" stop-color="#800404" />
+    </linearGradient>
+
+    <!-- Deep Drop Shadow Filter -->
+    <filter id="comicShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#000000" flood-opacity="0.85" />
+    </filter>
+
+    <!-- Punch Impact Bloom -->
+    <radialGradient id="punchBloom" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#FFE8B0" stop-opacity="0.8" />
+      <stop offset="50%" stop-color="#FF9020" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#D02000" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <!-- Enclosing Icon Group with Rounded Corners -->
+  <g clip-path="url(#appIconClip)">
+    <!-- 1. Sky & Atmosphere -->
+    <rect width="800" height="800" fill="url(#citySky)" />
+
+    <!-- 2. Setting Sun over Urban Skyline -->
+    <circle cx="580" cy="235" r="95" fill="url(#sunsetSun)" />
+
+    <!-- 3. Distant City Skyline & Flyover Bridge -->
+    <g fill="#25112F" opacity="0.9">
+      <!-- High-rise Towers -->
+      <rect x="620" y="150" width="48" height="250" />
+      <rect x="670" y="90" width="56" height="310" />
+      <rect x="730" y="130" width="50" height="270" />
+      <!-- Window Dots on Towers -->
+      <rect x="680" y="120" width="6" height="8" fill="#FFC966" opacity="0.6" />
+      <rect x="695" y="120" width="6" height="8" fill="#FFC966" opacity="0.6" />
+      <rect x="680" y="150" width="6" height="8" fill="#FFC966" opacity="0.6" />
+      <rect x="740" y="160" width="6" height="8" fill="#FFC966" opacity="0.6" />
+      
+      <!-- Elevated Highway / Flyover with Pillars -->
+      <path d="M 380 320 L 800 240 L 800 275 L 380 355 Z" fill="#38153E" />
+      <rect x="520" y="295" width="22" height="120" fill="#290E2E" />
+      <rect x="650" y="265" width="22" height="150" fill="#290E2E" />
+      <rect x="760" y="245" width="20" height="170" fill="#290E2E" />
+    </g>
+
+    <!-- 4. Left Building with Mural Billboard -->
+    <g fill="#2D1430">
+      <rect x="130" y="25" width="175" height="340" rx="4" />
+      <!-- Large Painted Billboard Frame -->
+      <rect x="150" y="45" width="135" height="165" fill="#EADBC8" stroke="#1A0A1C" stroke-width="4" />
+      <!-- Portrait Artwork on Billboard -->
+      <circle cx="217" cy="100" r="32" fill="#221226" />
+      <path d="M 190 145 Q 217 125 244 145 L 244 195 L 190 195 Z" fill="#221226" />
+      <circle cx="208" cy="102" r="3.5" fill="#EADBC8" />
+      <circle cx="226" cy="102" r="3.5" fill="#EADBC8" />
+      <path d="M 210 118 Q 217 124 224 118" stroke="#EADBC8" stroke-width="2.5" fill="none" />
+      <!-- Street Light Pole near billboard -->
+      <line x1="100" y1="155" x2="150" y2="150" stroke="#FFA834" stroke-width="4.5" />
+      <circle cx="100" cy="155" r="12" fill="#FFF08C" />
+    </g>
+
+    <!-- 5. Background Henchmen / Enforcers -->
+    <!-- Left Enforcer in Police Cap & Sunglasses -->
+    <g>
+      <circle cx="55" cy="275" r="48" fill="#C98B68" />
+      <path d="M 15 250 L 105 240 L 98 215 L 20 225 Z" fill="#18152B" />
+      <!-- Police Cap Peak -->
+      <polygon points="10,250 110,238 105,252 15,262" fill="#0C0A14" />
+      <!-- Sunglasses -->
+      <rect x="35" y="265" width="24" height="14" rx="2" fill="#08070D" />
+      <rect x="66" y="265" width="24" height="14" rx="2" fill="#08070D" />
+      <line x1="59" y1="270" x2="66" y2="270" stroke="#C99A45" stroke-width="2" />
+      <!-- Thick Mustache -->
+      <path d="M 45 298 Q 58 290 72 298 Q 58 306 45 298 Z" fill="#0A080F" />
+      <!-- Uniform Body & Yellow Cross-Sash -->
+      <path d="M 0 320 L 130 320 L 150 510 L 0 510 Z" fill="#182245" />
+      <polygon points="10,320 45,320 135,450 100,450" fill="#E2A624" />
+    </g>
+
+    <!-- Right Enforcer Recoiling from the Punch Impact! -->
+    <g>
+      <circle cx="740" cy="395" r="54" fill="#B87B57" />
+      <!-- Wide open screaming mouth in pain -->
+      <ellipse cx="715" cy="425" rx="16" ry="22" fill="#11090C" />
+      <rect x="710" y="415" width="10" height="6" rx="1" fill="#FFFFFF" />
+      <!-- Recoiling head cap -->
+      <path d="M 695 370 L 785 360 L 790 330 L 700 340 Z" fill="#18152B" />
+      <polygon points="690,370 790,360 780,375 685,382" fill="#0C0A14" />
+      <!-- Flying dark sunglasses knocked off face -->
+      <rect x="680" y="375" width="22" height="12" rx="2" fill="#08070D" transform="rotate(-25, 680, 375)" />
+      <!-- Uniform & Yellow Cross-Sash -->
+      <path d="M 670 440 L 800 440 L 800 620 L 650 620 Z" fill="#182245" />
+      <polygon points="760,440 795,440 725,600 690,600" fill="#E2A624" />
+    </g>
+
+    <!-- 6. Hero CM Vijay (Center Foreground) -->
+    <g filter="url(#comicShadow)">
+      <!-- Dynamic Flowing Red Angavastram / Ceremonial Shawl Fluttering in Wind -->
+      <path d="M 230 200 Q 140 240 30 280 Q 70 350 170 310 Q 220 330 245 250 Z" fill="#BF1515" />
+      <path d="M 10 280 Q 80 265 140 310 Q 60 335 10 280 Z" fill="#880A0A" />
+
+      <!-- Crisp White Kurta Shirt with Fold Shadows -->
+      <path d="M 175 250 L 395 230 L 470 380 L 410 490 L 180 460 L 115 350 Z" fill="#FFFFFF" stroke="#CBB9AC" stroke-width="2.5" />
+      <path d="M 270 235 L 300 315 L 330 235" fill="none" stroke="#261A14" stroke-width="3" />
+      <path d="M 300 315 L 300 430" fill="none" stroke="#261A14" stroke-width="2.5" />
+      <!-- Collar Points -->
+      <polygon points="255,225 290,260 245,260" fill="#FFFFFF" stroke="#332219" stroke-width="2" />
+      <polygon points="345,225 310,260 355,260" fill="#FFFFFF" stroke="#332219" stroke-width="2" />
+
+      <!-- Red Ceremonial Sash Across Chest -->
+      <path d="M 250 230 L 335 385 L 295 425 L 210 260 Z" fill="#D61818" />
+      <path d="M 230 240 L 315 395 L 305 415 L 220 260 Z" fill="#F03030" />
+
+      <!-- Hero Head, Iconic Hair & Beard -->
+      <!-- Neck -->
+      <path d="M 270 215 L 330 215 L 335 250 L 265 250 Z" fill="#C98863" />
+      <!-- Face -->
+      <path d="M 262 165 Q 256 215 305 232 Q 350 215 348 165 Q 348 125 305 125 Q 262 125 262 165 Z" fill="#DE9B73" />
+      <!-- Voluminous Curly Dark Hair -->
+      <path d="M 245 155 Q 235 110 270 80 Q 310 65 350 78 Q 390 95 382 140 Q 375 175 358 185 Q 365 140 338 120 Q 298 108 268 130 Q 250 142 245 155 Z" fill="#140D0F" />
+      <!-- Neatly Trimmed Beard & Mustache -->
+      <path d="M 265 175 L 270 198 Q 305 238 340 198 L 345 175 Q 342 212 305 228 Q 268 212 265 175 Z" fill="#140D0F" />
+      <path d="M 282 190 Q 305 178 328 190 Q 305 202 282 190 Z" fill="#100A0C" />
+      <!-- Piercing Heroic Eyes & Furrowed Brows -->
+      <path d="M 272 158 Q 288 150 298 160" stroke="#120A0C" stroke-width="4.5" fill="none" />
+      <path d="M 312 160 Q 322 150 338 158" stroke="#120A0C" stroke-width="4.5" fill="none" />
+      <circle cx="286" cy="166" r="4.5" fill="#120A0C" />
+      <circle cx="324" cy="166" r="4.5" fill="#120A0C" />
+
+      <!-- Left Arm in Ready Boxing Guard -->
+      <path d="M 195 275 L 135 325 L 175 355 L 255 295 Z" fill="#FFFFFF" />
+      <path d="M 135 325 L 185 345 L 215 315 L 185 275 Z" fill="#D68D65" stroke="#2B1A12" stroke-width="2" />
+      <ellipse cx="200" cy="300" rx="22" ry="18" fill="#BD734E" />
+
+      <!-- Dynamic Muscular Right Arm Extending Forward -->
+      <path d="M 370 235 L 485 285 L 455 355 L 350 295 Z" fill="#FFFFFF" stroke="#291811" stroke-width="2.5" />
+      <!-- Rolled Up Shirt Sleeve Cuff -->
+      <ellipse cx="475" cy="315" rx="24" ry="38" fill="#EAE0D8" stroke="#291811" stroke-width="3" />
+
+      <!-- Forearm & Tendons -->
+      <path d="M 485 295 L 685 380 L 635 445 L 465 345 Z" fill="#DE946C" stroke="#2E1810" stroke-width="3.5" />
+      <line x1="495" y1="315" x2="645" y2="400" stroke="#FFF0E6" stroke-width="3" opacity="0.45" />
+
+      <!-- ================= THE GIANT KNOCKOUT FIST ================= -->
+      <g transform="translate(685, 420) scale(1.4)">
+        <!-- Fist Impact Glow Behind -->
+        <circle cx="0" cy="0" r="65" fill="url(#punchBloom)" />
+        <!-- Palm / Back of Hand -->
+        <ellipse cx="0" cy="0" rx="58" ry="48" fill="#C97E56" stroke="#240F07" stroke-width="4.5" />
+        <!-- Knuckles & Clenched Fingers -->
+        <rect x="-48" y="-36" width="24" height="36" rx="11" fill="#DE946C" stroke="#240F07" stroke-width="3" />
+        <rect x="-21" y="-42" width="24" height="38" rx="11" fill="#E8A17B" stroke="#240F07" stroke-width="3" />
+        <rect x="6" y="-44" width="24" height="38" rx="11" fill="#DE946C" stroke="#240F07" stroke-width="3" />
+        <rect x="31" y="-38" width="22" height="34" rx="10" fill="#C97E56" stroke="#240F07" stroke-width="3" />
+        <!-- Clenched Thumb -->
+        <path d="M -48 6 Q -25 28 18 16 Q 12 -6 -36 -6 Z" fill="#B86F48" stroke="#240F07" stroke-width="3" />
+      </g>
+    </g>
+
+    <!-- 7. Foreground Cheering Crowd Silhouettes -->
+    <g fill="#0F0811">
+      <circle cx="50" cy="800" r="95" />
+      <circle cx="170" cy="835" r="85" />
+      <circle cx="730" cy="805" r="95" />
+      <circle cx="830" cy="835" r="85" />
+    </g>
+
+    <!-- 8. Master Title Logo Lockup: "CM VIJAY STREET BATTLE" -->
+    <g filter="url(#comicShadow)" transform="translate(400, 560)">
+      <!-- Waving Tamil Political Party Flag (Red & Black with Silhouette) -->
+      <g transform="translate(75, -95) scale(0.95)">
+        <path d="M 0 0 Q 30 -12 60 0 Q 90 12 125 0 L 125 42 Q 90 54 60 42 Q 30 30 0 42 Z" fill="#D61818" />
+        <path d="M 0 42 Q 30 30 60 42 Q 90 54 125 42 L 125 84 Q 90 96 60 84 Q 30 72 0 84 Z" fill="#140D0F" />
+        <rect x="-7" y="-6" width="7" height="105" fill="#8A6732" />
+        <!-- Flag center emblem: Silhouette of leader with raised fist -->
+        <g transform="translate(45, 18) scale(0.45)">
+          <circle cx="15" cy="8" r="9" fill="#F6ECDD" />
+          <path d="M 0 35 L 30 35 L 25 65 L 5 65 Z" fill="#F6ECDD" />
+          <path d="M 22 22 L 35 4 L 42 6 L 30 28 Z" fill="#F6ECDD" />
+          <circle cx="38" cy="4" r="4.5" fill="#F6ECDD" />
+        </g>
+      </g>
+
+      <!-- "CM" Giant Stylized Block Letters with Center Silhouette Cutout -->
+      <g transform="translate(-165, -72)">
+        <text x="0" y="0" font-family="'Cinzel', Impact, sans-serif" font-size="120" font-weight="900" fill="#FAF4EB" stroke="#140705" stroke-width="14" paint-order="stroke fill">CM</text>
+        <!-- Center Silhouette of Leader with Raised Fist inside the M -->
+        <g transform="translate(108, -52) scale(0.6)">
+          <circle cx="15" cy="10" r="10" fill="#140B09" />
+          <path d="M 0 40 L 30 40 L 25 70 L 5 70 Z" fill="#140B09" />
+          <!-- Raised Fist Arm -->
+          <path d="M 22 25 L 35 5 L 42 7 L 30 32 Z" fill="#140B09" />
+          <circle cx="38" cy="5" r="5" fill="#140B09" />
+        </g>
+      </g>
+
+      <!-- "VIJAY" Giant Blazing Fire Comic Letters -->
+      <g transform="translate(0, 42)">
+        <!-- Distressed Grunge Backing Splatter -->
+        <polygon points="-290,-48 290,-58 270,38 -280,48" fill="#E51414" stroke="#FFF08C" stroke-width="3.5" />
+        <text x="0" y="16" font-family="Impact, 'Cinzel', sans-serif" font-size="125" font-style="italic" font-weight="900" letter-spacing="8" fill="url(#fireYellow)" stroke="#220303" stroke-width="11" paint-order="stroke fill" text-anchor="middle">VIJAY</text>
+      </g>
+
+      <!-- "STREET BATTLE" Stencil Banner -->
+      <g transform="translate(0, 118)">
+        <polygon points="-230,-25 230,-30 210,24 -220,28" fill="url(#battleRed)" stroke="#FFFFFF" stroke-width="3" />
+        <text x="0" y="8" font-family="'Plus Jakarta Sans', Arial, sans-serif" font-size="38" font-style="italic" font-weight="900" letter-spacing="6" fill="#FFFFFF" text-anchor="middle">STREET BATTLE</text>
+      </g>
+    </g>
+  </g>
+
+  <!-- High-Gloss App Icon Border Frame -->
+  <rect x="4" y="4" width="792" height="792" rx="136" ry="136" fill="none" stroke="#C99A45" stroke-width="8" opacity="0.65" />
+</svg>
